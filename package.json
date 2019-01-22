@@ -1,0 +1,36 @@
+{
+  "name": "webcomponentstest1",
+  "version": "0.0.1",
+  "description": "This is webpack 4 starter with styled components and babel version 7. I started completely from scratch taking all latest versions avaliable at the time (2019-01-19).",
+  "main": "webpack.config.js",
+  "scripts": {
+    "start": "webpack --watch --env=dev",
+    "dev": "webpack-dev-server --env=dev",
+    "build:dev": "webpack --env=dev",
+    "build": "webpack --env=prod"
+  },
+  "keywords": [],
+  "author": "Dusan Mijatovic",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/plugin-proposal-class-properties": "^7.3.0",
+    "@babel/plugin-proposal-decorators": "^7.3.0",
+    "@babel/preset-env": "^7.3.1",
+    "babel-eslint": "^10.0.1",
+    "babel-loader": "^8.0.5",
+    "clean-webpack-plugin": "^1.0.1",
+    "copy-webpack-plugin": "^4.6.0",
+    "eslint": "^5.12.1",
+    "eslint-plugin-prettier": "^3.0.1",
+    "file-loader": "^3.0.1",
+    "html-webpack-plugin": "^3.2.0",
+    "prettier": "^1.16.1",
+    "uglifyjs-webpack-plugin": "^2.1.1",
+    "url-loader": "^1.1.2",
+    "webpack": "^4.29.0",
+    "webpack-bundle-analyzer": "^3.0.3",
+    "webpack-cli": "^3.2.1",
+    "webpack-dev-server": "^3.1.14"
+  }
+}

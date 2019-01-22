@@ -1,0 +1,54 @@
+body {
+  padding: 0rem 2rem;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+#app {
+  display: grid;
+  grid-column: 1 3;
+  /*
+   grid-template-columns: 3fr 3fr 3fr;
+   grid-template-rows: 20rem;
+   grid-template-rows: repeat(6, 1fr);
+   grid-auto-rows: minmax(12rem, auto);  
+  grid-template-areas:
+    "header"
+    "card";
+  */
+  grid-gap: 1rem;
+}
+
+simple-header {
+  display: block;
+  font-size: 2rem;
+  padding: 2rem 0rem;
+}
+
+our-client-card {
+  display: inline-grid;
+  width: 30rem;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  border: 1px solid #ccc;
+}
+
+.our-client-card {
+  width: 100%;
+}
+
+.our-client-prop-record {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.25rem;
+}
+
+.our-client-prop-key {
+  color: grey;
+}
+
+.our-client-prop-value {
+  text-align: right;
+}
