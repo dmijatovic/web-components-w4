@@ -15,6 +15,7 @@ const getUsers = {
         //console.log(data)
       })
       .catch(e => {
+        // eslint-disable-next-line
         console.error('This is error!')
         throw e
       })
