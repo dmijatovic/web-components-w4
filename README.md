@@ -13,13 +13,13 @@ Just run `npm install` and all libs mentioned below will be installed.
   npm i -D html-webpack-plugin url-loader file-loader copy-webpack-plugin uglifyjs-webpack-plugin clean-webpack-plugin
   # 3. install babel loaders - basics v7
   npm i -D babel-loader @babel/core @babel/preset-env @babel/plugin-proposal-class-properties @babel/plugin-proposal-decorators
-  # 6. ESLint for react and styled components
+  # 4. ESLint for react and styled components
   npm i -D eslint babel-eslint eslint-plugin-react
-  # 7. install prettier for
+  # 5. install prettier for
   npm i -D prettier eslint-plugin-prettier
-  # 8. babel polyfills (basic), fetch polyfil for ie11
+  # (optional) babel polyfills (basic), fetch polyfil for ie11
   npm i -s @babel/polyfill whatwg-fetch
-  # 9. testing with jest & enzyme incl. eslint plugin
+  # (optional) testing with jest & enzyme incl. eslint plugin
   npm i -D jest eslint-plugin-jest enzyme enzyme-adapter-react-16
 
 ```
