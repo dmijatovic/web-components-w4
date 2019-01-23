@@ -63,3 +63,42 @@ BTW: I have chosen here simpler approach with some code duplication above more c
 - dev: development branch
 
 ## Setup gotcha's :-)
+
+
+## Web components cheetsheet
+
+Custom element lifecycle methods
+
+```javascript
+/**
+ * Toolip custom element
+ * v0.0.1 Jan 2019
+ */
+class dv4allTooltip extends HTMLElement {
+  constructor() {
+    super()
+    console.log('Tooltip...constructor')
+  }
+  /**
+   * Lifecycle method fired after custom
+   * element is attached to DOM
+   */
+  connectedCallback() {
+    console.log('Tooltip...connectedCallback')
+  }
+  /**
+   * Lifecycle method fired on attribute change
+   */
+  attributeChangedCallback() {
+    console.log('Tooltip...attributeChangedCallback')
+  }
+  /**
+   * Lifcycle method fired after custom
+   * element is unmounted from the DOM
+   */
+  disconnectedCallback() {
+    console.log('Tooltip...disconnectedCallback')
+  }
+}
+
+```
