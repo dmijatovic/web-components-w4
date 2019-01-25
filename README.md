@@ -87,9 +87,18 @@ class dv4allTooltip extends HTMLElement {
     console.log('Tooltip...connectedCallback')
   }
   /**
-   * Lifecycle method fired on attribute change
+   * Define which attributes of custom element
+   * should be monitored for changes
    */
-  attributeChangedCallback() {
+  static get observedAttributes(){
+    return ['list','of-attributes','to-monitor']
+  }
+  /**
+   * Lifecycle method fired on attribute change
+   * it requires static get method to define
+   * which attribute(s) should be monitored
+   */
+  attributeChangedCallback(name, oldVal, newVal) {
     console.log('Tooltip...attributeChangedCallback')
   }
   /**
